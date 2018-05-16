@@ -9,7 +9,7 @@ description: "Bite-sized modules to learn Python." # used by search engines
 theme_settings:
   # Meta
   title: NanoBook # blog's title
-  avatar: assets/img/triangle.svg
+  avatar: assets/img/logo.png
   favicon: assets/favicon.ico
   gravatar: # Email MD5 hash
 
