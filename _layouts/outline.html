@@ -2,6 +2,8 @@
 layout: default
 ---
 
+{% assign sorted_units = site.units | sort: "order" %}
+
 <article {% if page.feature-img %}class="feature-image"{% endif %}>
   <header id="main" style="background-image: url('{{ site.baseurl }}/{{ page.feature-img }}')">
     <h1 id="{{ page.title | default: "" | cgi_escape }}" class="title">
@@ -14,15 +16,16 @@ layout: default
   </header>
 
   <section class="post-content">
-    {% for page in site.units | sort: "order" %}
-      {% assign unit_lessons = site.lessons | where: "unit", page.unit %}
+    {% for page in sorted_units %}
+      {% assign unit_lessons = site.lessons | where: "unit", page.unit | sort: "order" %}
       <h1><a href="{{ site.baseurl }}/units/{{ page.unit }}">{{page.title}}</a></h1>
       <ol>
-      {% for lesson in unit_lessons | sort: "order" %}
+      {% for lesson in unit_lessons %}
         <li><a href="{{ site.baseurl }}/lessons/{{ lesson.slug }}">{{lesson.title}}</a></li>
       {% endfor %}
       </ol>
     {% endfor %}
+    <br>
   </section>
     
 </article>

@@ -2,7 +2,7 @@
 layout: default
 ---
 
-{% assign unit_lessons = site.lessons | where: "unit", page.unit %}
+{% assign unit_lessons = site.lessons | where: "unit", page.unit | sort: "order" %}
 
 <article {% if page.feature-img %}class="feature-image"{% endif %}>
   <header id="main" style="background-image: url('{{ site.baseurl }}/{{ page.feature-img }}')">
@@ -19,14 +19,15 @@ layout: default
     <div class="tag-list">
       <a class="button" href="{{ site.baseurl }}/units">All Units</a>
     </div>
-    <br>
+    <hr>
     {{ content }}
     <h1>Lessons in this Unit</h1>
     <ol>
-    {% for lesson in unit_lessons | sort: "order" %}
+    {% for lesson in unit_lessons %}
       <li><a href="{{ site.baseurl }}{{ lesson.url }}">{{ lesson.title }}</a></li>
     {% endfor %}
     </0l>
+    <br>
   </section>
     
 </article>
