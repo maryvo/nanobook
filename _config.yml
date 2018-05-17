@@ -87,6 +87,12 @@ collections:
   portfolio:
     output: true
     permalink: /:collection/:name
+  units:
+    output: true
+    permalink: /:collection/:name
+  lessons:
+    output: true
+    permalink: /:collection/:name
 
 
 # BUILD SETTINGS

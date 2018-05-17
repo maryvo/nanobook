@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+{% assign unit_data = site.units | where: "unit", page.unit %}
+{% assign unit_name = unit_data | map: "title" %}
+
+<article {% if page.feature-img %}class="feature-image"{% endif %}>
+  <header id="main" style="background-image: url('{{ site.baseurl }}/{{ page.feature-img }}')">
+    <a class="link is-white" href="{{ site.baseurl }}/units/{{ page.unit }}">Unit: {{ unit_name }}</a>
+    <h1 id="{{ page.title | default: "" | cgi_escape }}" class="title">
+        {{ page.title }}
+    </h1>
+    
+    {% if page.subtitle %}
+    <h2 class="subtitle">{{ page.subtitle }}</h2>
+    {% endif %}
+  </header>
+
+  <section class="post-content">
+    <div class="tag-list">
+      <a class="button" href="{{ site.baseurl }}/units">All Units</a>
+      <a class="button" href="{{ site.baseurl }}/units/{{ page.unit }}">{{ unit_name }}</a>
+    </div>
+    {{ content }}
+  </section>
+
+  <!-- Tag list for portfolio -->
+  {% capture tag_list %}{{ page.tags | join: "|"}}{% endcapture %}
+  {% include tags_list.html tags=tag_list %}
+    
+</article>
