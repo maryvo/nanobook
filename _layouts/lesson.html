@@ -23,7 +23,11 @@ layout: default
       <a class="button" href="{{ site.baseurl }}/units/{{ page.unit }}">{{ unit_name }}</a>
     </div>
     <hr>
-    {{ content | toc }}
+    {% if page.toc %}
+    {% include toc.html html=content %}
+    <hr>
+    {% endif %}
+    {{ content }}
     <br>
   </section>
     
