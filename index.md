@@ -2,7 +2,7 @@
 layout: page
 title: NanoBook
 subtitle: Learn Python through bite-sized modules.
-feature-img: "assets/img/gradient-orange.png"
+feature-img: "assets/img/gradients/orange.png"
 hide: true
 ---
 
