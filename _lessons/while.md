@@ -6,4 +6,4 @@ order: 2
 feature-img: "assets/img/gradients/blue.png"
 ---
 
-While Loops...
+While loops continue looping as long as some condition is true.

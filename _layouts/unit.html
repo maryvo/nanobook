@@ -7,26 +7,23 @@ layout: default
 <article {% if page.feature-img %}class="feature-image"{% endif %}>
   <header id="main" style="background-image: url('{{ site.baseurl }}/{{ page.feature-img }}')">
     <h1 id="{{ page.title | default: "" | cgi_escape }}" class="title">
-        {{ page.title }}
+        {{ page.order }}. {{ page.title }}
     </h1>
-    
-    {% if page.subtitle %}
-    <h2 class="subtitle">{{ page.subtitle }}</h2>
-    {% endif %}
   </header>
 
   <section class="post-content">
-    <div class="tag-list">
-      <a class="button" href="{{ site.baseurl }}/units">All Units</a>
-    </div>
-    <hr>
     {{ content }}
     <h1>Lessons in this Unit</h1>
-    <ol>
     {% for lesson in unit_lessons %}
-      <li><a href="{{ site.baseurl }}{{ lesson.url }}">{{ lesson.title }}</a></li>
+      {% assign lines = lesson.content | newline_to_br | split: '<br />' %}
+      <h2><a href="{{ site.baseurl }}{{ lesson.url }}">{{ page.order }}.{{ lesson.order }}. {{ lesson.title }}</a></h2>
+      <span class="right"><code class="highlighter-rouge">{{ lesson.content | strip_html | size }}</code> pts</span>
+      <p>{{ lines.first }}</p>
     {% endfor %}
-    </0l>
+    <hr>
+    <div class="tag-list">
+      <a class="button" href="{{ site.baseurl }}/units">Back to Units</a>
+    </div>
     <br>
   </section>
     

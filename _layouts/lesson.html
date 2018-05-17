@@ -4,12 +4,13 @@ layout: default
 
 {% assign unit_data = site.units | where: "unit", page.unit %}
 {% assign unit_name = unit_data | map: "title" %}
+{% assign unit_order = unit_data | map: "order" %}
 
 <article {% if page.feature-img %}class="feature-image"{% endif %}>
   <header id="main" style="background-image: url('{{ site.baseurl }}/{{ page.feature-img }}')">
-    <a class="link is-white" href="{{ site.baseurl }}/units/{{ page.unit }}">Unit: {{ unit_name }}</a>
+    <a class="link is-white" href="{{ site.baseurl }}/units/{{ page.unit }}">{{ unit_name }} {{ unit_order }}.{{ page.order }}</a>
     <h1 id="{{ page.title | default: "" | cgi_escape }}" class="title">
-        {{ page.title }}
+      {{ page.title }}
     </h1>
     
     {% if page.subtitle %}
@@ -24,7 +25,7 @@ layout: default
     </div>
     <hr>
     {% if page.toc %}
-    {% include toc.html html=content %}
+    {% include toc.html html=content ordered=true %}
     <hr>
     {% endif %}
     {{ content }}
