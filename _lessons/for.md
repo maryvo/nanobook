@@ -6,6 +6,8 @@ order: 1
 feature-img: "assets/img/gradients/blue.png"
 ---
 
+For loops allow repeated actions.
+
 # Example
 
 ```python

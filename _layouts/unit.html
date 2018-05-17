@@ -2,6 +2,8 @@
 layout: default
 ---
 
+{% assign unit_lessons = site.lessons | where: "unit", page.unit %}
+
 <article {% if page.feature-img %}class="feature-image"{% endif %}>
   <header id="main" style="background-image: url('{{ site.baseurl }}/{{ page.feature-img }}')">
     <h1 id="{{ page.title | default: "" | cgi_escape }}" class="title">
@@ -21,7 +23,7 @@ layout: default
     {{ content }}
     <h1>Lessons in this Unit</h1>
     <ol>
-    {% for lesson in site.lessons | where "unit": unit | sort: "order" %}
+    {% for lesson in unit_lessons | sort: "order" %}
       <li><a href="{{ site.baseurl }}{{ lesson.url }}">{{ lesson.title }}</a></li>
     {% endfor %}
     </0l>

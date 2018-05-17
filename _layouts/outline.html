@@ -15,9 +15,10 @@ layout: default
 
   <section class="post-content">
     {% for page in site.units | sort: "order" %}
+      {% assign unit_lessons = site.lessons | where: "unit", page.unit %}
       <h1><a href="{{ site.baseurl }}/units/{{ page.unit }}">{{page.title}}</a></h1>
       <ol>
-      {% for lesson in site.lessons | where: "unit", page.unit | sort: "order" %}
+      {% for lesson in unit_lessons | sort: "order" %}
         <li><a href="{{ site.baseurl }}/lessons/{{ lesson.slug }}">{{lesson.title}}</a></li>
       {% endfor %}
       </ol>

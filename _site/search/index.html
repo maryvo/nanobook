@@ -140,15 +140,6 @@
             </li>
           
         
-          
-            <li class="separator"> | </li>
-            <li>
-                <a class="clear" href="http://localhost:4000/nanobook/tags">
-                    <i class="fa fa-tags" aria-hidden="true"></i>
-                </a>
-            </li>
-          
-        
     </ul>
         
 	</nav>
@@ -156,7 +147,7 @@
 
     <div class="content">
       <article class="feature-image">
-  <header id="main" style="background-image: url('/nanobook/assets/img/pexels/search-map.jpeg')">
+  <header id="main" style="background-image: url('/nanobook/assets/img/gradients/blue.png')">
     <h1 id="Search" class="title">
         Search
     </h1>
@@ -181,7 +172,7 @@
             searchInput: document.getElementById('search-input'),
             resultsContainer: document.getElementById('results-container'),
             json: '/nanobook/assets/data/search.json',
-            searchResultTemplate: '<div class="search-title"><a href="{url}"><h3> {title}</h3></a><div class="meta">{date} <div class="right"><i class="fa fa-tag"></i> {tags}</div></div><p>{excerpt}</p></div><hr> ',
+            searchResultTemplate: '<div class="search-title"><a href="{url}"><h3>{title}</h3></a><p>{excerpt}</p></div><hr> ',
             noResultsText: 'No results found',
             limit: 10,
             fuzzy: false,
