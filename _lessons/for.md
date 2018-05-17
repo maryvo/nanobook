@@ -7,11 +7,37 @@ feature-img: "assets/img/gradients/blue.png"
 toc: true
 ---
 
-For loops allow repeated actions.
+For loops repeat some code for every item in a sequence.
 
-# Example
+# Anatomy
+
+The first line of a loop tells the computer how many times the loop will run. Each turn is called an **iteration**.
+
+The **body** of the loop is any code that is indented past the loop's first line. The body gets repeated on each iteration.
+
+**Code**
 
 ```python
-for i in range(10):
+for i in range(3):
+    # This is the body
     print(i)
+    # This will print three times
 ```
+
+**Output**
+
+```
+0
+1
+2
+```
+
+# Ranges
+
+D
+
+# Breaks
+
+# Nesting
+
+# Sequences
