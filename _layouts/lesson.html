@@ -22,12 +22,8 @@ layout: default
       <a class="button" href="{{ site.baseurl }}/units">All Units</a>
       <a class="button" href="{{ site.baseurl }}/units/{{ page.unit }}">{{ unit_name }}</a>
     </div>
-    {% if page.toc %}
     <hr>
-    {{ content | toc_only }}
-    {% endif %}
-    <hr>
-    {{ content | inject_anchors }}
+    {{ content | toc }}
     <br>
   </section>
     
