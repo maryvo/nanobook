@@ -65,10 +65,6 @@ for x in range(3):
 - The body of loop u will run 3 x 10 x 4 = 120 times in total
 - The body of loop v will run 3 x 10 x 4 x 7 = 840 times in total
 
-# Nesting while loops
-
-Coming soon...
-
 # Accessing variables in loops
 
 Coming soon...
