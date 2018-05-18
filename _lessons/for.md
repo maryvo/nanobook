@@ -9,7 +9,7 @@ toc: true
 
 For loops repeat some code for every item in a sequence.
 
-# Structure
+# Repeat tasks using loops
 
 The first line of a loop tells the computer how many times the loop will run. Each turn is called an **iteration**.
 
@@ -36,7 +36,7 @@ for i in range(3):
 
 Surprised that the number 3 never printed? Read on.
 
-# Ranges
+# Change the loop range
 
 Ranges allow you to specify how many times to run a loop. By default, a range starts at zero. But you can change that!
 
@@ -111,7 +111,7 @@ print(backwards)
 # []
 ```
 
-# Looping Over Other Items
+# Loop over different kinds of values
 
 You can loop over more than just numbers!
 
@@ -173,7 +173,7 @@ I love my job.
 ```
 
 
-# Enumeration
+# Access positions of items
 
 Since sequences are ordered, every item has an **index**, starting from `0` to indicate its position. You can access every item and its index by **enumerating** the items.
 
@@ -195,7 +195,7 @@ for (index, dessert) in enumerate(favorites):
 3. Vanilla Ice Cream
 ```
 
-# Breaking
+# Terminate a loop early 
 
 To exit a loop early and avoid running the remaining iterations, you can use the `break` keyword.
 
