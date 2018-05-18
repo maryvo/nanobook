@@ -9,7 +9,7 @@ toc: true
 
 For loops repeat some code for every item in a sequence.
 
-# Repeat tasks using loops
+# Repeating tasks using loops
 
 The first line of a loop tells the computer how many times the loop will run. Each turn is called an **iteration**.
 
@@ -36,11 +36,11 @@ for i in range(3):
 
 Surprised that the number 3 never printed? Read on.
 
-# Change the loop range
+# Changing the loop range
 
 Ranges allow you to specify how many times to run a loop. By default, a range starts at zero. But you can change that!
 
-## Parameters
+## The Range Function
 
 **range(start, stop, [step])**
 
@@ -60,7 +60,7 @@ print(numbers)
 # [3, 4, 5, 6]
 ```
 
-## Steps
+## Step Size
 
 The term **increment** means to add. You can change the incrementation of a loop with the `step` parameter.
 
@@ -111,14 +111,9 @@ print(backwards)
 # []
 ```
 
-# Loop over different kinds of values
+# Looping over different kinds of values
 
-You can loop over more than just numbers!
-
-- **Sequences** contain ordered items
-- **Collections** contain items that do not have a specified order
-
-You will meet more examples of sequences and collections when we get to Data Structures. Here are some useful sequences:
+You can write loops that use other types of data besides numbers. Any type of data that can be looped over is described as an **iterable**. Lists and strings are examples of common iterables.
 
 ## Lists
 
@@ -173,9 +168,9 @@ I love my job.
 ```
 
 
-# Access positions of items
+# Accessing positions of items
 
-Since sequences are ordered, every item has an **index**, starting from `0` to indicate its position. You can access every item and its index by **enumerating** the items.
+Every item in an iterable also has an **index**, starting from `0`, that indicates its position. You can access every item and its index by **enumerating** the items.
 
 **Code**
 
@@ -195,7 +190,7 @@ for (index, dessert) in enumerate(favorites):
 3. Vanilla Ice Cream
 ```
 
-# Terminate a loop early 
+# Terminating a loop early 
 
 To exit a loop early and avoid running the remaining iterations, you can use the `break` keyword.
 

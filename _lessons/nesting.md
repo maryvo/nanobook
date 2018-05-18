@@ -9,7 +9,7 @@ toc: true
 
 Writing loops inside other loops is called nesting.
 
-# Nested For Loops
+# Nesting for loops
 
 An **inner loop** is **nested** inside the body of an **outer** loop. Each time the outer loop _body_ runs an **iteration**, the entire inner loop runs.
 
@@ -65,10 +65,10 @@ for x in range(3):
 - The body of loop u will run 3 x 10 x 4 = 120 times in total
 - The body of loop v will run 3 x 10 x 4 x 7 = 840 times in total
 
-# Nested While Loops
+# Nesting while loops
 
 Coming soon...
 
-# Variable Scope in Loops
+# Accessing variables in loops
 
 Coming soon...
