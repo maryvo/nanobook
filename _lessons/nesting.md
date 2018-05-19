@@ -13,6 +13,8 @@ Writing loops inside other loops is called nesting.
 
 An **inner loop** is **nested** inside the body of an **outer** loop. Each time the outer loop _body_ runs an **iteration**, the entire inner loop runs.
 
+Inner loops can access variables that are inside the outer loops they are nested in.
+
 **Code**
 
 ```python
@@ -108,59 +110,3 @@ All done!
 ```
 
 After the `break` statement, execution will continue after the end of the nested loop. That is why the `- Moving on to the next state...` gets printed on every iteration of the outer loop.
-
-# Accessing loop variables
-
-Inner loops can access variables that are inside the outer loops they are nested in.
-
-**Code**
-
-```python
-numbers = [3, 1, 5]
-for number in numbers:
-    print('---')
-    twice = number * 2
-    for i in range(twice):
-        difference = twice - i
-        print(difference)
-```
-
-**Output**
-
-```
----
-6
-5
-4
-3
-2
-1
----
-2
-1
----
-10
-9
-8
-7
-6
-5
-4
-3
-2
-1
-```
-
-However, loops should not try to access variables in other loops that have already terminated.
-
-**Code**
-
-```python
-for i in range(3):
-    for a in range(i):
-        print(a)
-    for b in range(i):
-        print(a + b)
-```
-
-> But do we really want to go here?
