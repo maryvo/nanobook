@@ -16,9 +16,10 @@ layout: default
     <h1>Lessons in this Unit</h1>
     {% for lesson in unit_lessons %}
       {% assign lines = lesson.content | newline_to_br | split: '<br />' %}
-      <h2><a href="{{ site.baseurl }}{{ lesson.url }}">{{ page.order }}.{{ lesson.order }}. {{ lesson.title }}</a></h2>
-      <span class="right"><code class="highlighter-rouge">{{ lesson.content | strip_html | size }}</code> pts</span>
-      <p>{{ lines.first }}</p>
+      <p>
+        <a href="{{ site.baseurl }}{{ lesson.url }}">{{ page.order }}.{{ lesson.order }}. {{ lesson.title }}</a>
+        <span class="right"><code class="highlighter-rouge">{{ lesson.content | strip_html | size }}</code> pts</span>
+      </p>
     {% endfor %}
     <hr>
     <div class="tag-list">

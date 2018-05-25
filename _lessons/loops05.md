@@ -1,19 +1,25 @@
 ---
 layout: lesson
-title: Nesting
+title: Writing loops inside other loops
 unit: loops
-order: 3
+order: 5
 feature-img: "assets/img/gradients/blue.png"
 toc: true
 ---
 
+# Writing loops inside other loops
+
 Writing loops inside other loops is called nesting.
 
-# Nesting for loops
+## Nesting loops
 
 An **inner loop** is **nested** inside the body of an **outer** loop. Each time the outer loop _body_ runs an **iteration**, the entire inner loop runs.
 
 Inner loops can access variables that are inside the outer loops they are nested in.
+
+## Counting how many times the loop body will run
+
+Consider this example of nested loops:
 
 **Code**
 
@@ -68,45 +74,3 @@ for x in range(3):
 - The body of loop v will run 3 x 10 x 4 x 7 = 840 times in total
 
 You can also nest while loops in any way you like. But with while loops, you may not be able to count exactly how many times nested loops will run.
-
-# Terminating nested loops
-
-If you use the `break` keyword, it will only break out of the current loop. The outer loop will still continue, unless it also hits a break statement.
-
-**Code**
-
-```python
-# Which states have more than one vowel in a row?
-states = ['Indiana', 'New York', 'Louisiana', 'Colorado', 'Denver']
-vowels = 'aeiou'
-for state in states:
-    print('Checking: ' + state)
-    previous_was_vowel = False
-    for letter in state:
-        is_vowel = letter.lower() in vowels
-        if is_vowel and previous_was_vowel:
-            print('- Yes, it has consecutive vowels!')
-            break
-        previous_was_vowel = is_vowel
-print('All done!')
-```
-
-**Output**
-
-```python
-Checking: Indiana
-- Yes, it has consecutive vowels!
-- Moving on to the next state...
-Checking: New York
-- Moving on to the next state...
-Checking: Louisiana
-- Yes, it has consecutive vowels!
-- Moving on to the next state...
-Checking: Colorado
-- Moving on to the next state...
-Checking: Denver
-- Moving on to the next state...
-All done!
-```
-
-After the `break` statement, execution will continue after the end of the nested loop. That is why the `- Moving on to the next state...` gets printed on every iteration of the outer loop.
