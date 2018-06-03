@@ -23,7 +23,7 @@ Here are some examples of inequality comparisons and how to read them:
 | `20 <= 30` | `20` is less than or equal to `30` | `True` |
 | `50 >= 50` | `50` is greater than or equal to `50` | `True` |
 
-## Inequalities with strings
+### Inequalities with strings
 
 You can also use inequality comparisons with strings. The comparison is based on the alphabetical order of the words.
 
