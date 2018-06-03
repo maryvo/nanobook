@@ -64,7 +64,7 @@ if today != 'Wednesday':
 
 ## Identity comparisons
 
-You can check if two variables refer to the same object with the `is` syntax. Since we will work mostly with primitive data types, you should use `==` instead of `is`.
+You can check if two variables refer to the same object with the `is` syntax. When working with primitive data types, use `==` instead of `is`.
 
 If you want to check if a variable is `None`, then you should use `is`.
 
