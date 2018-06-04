@@ -18,9 +18,9 @@ When programming in Python, the mathematical operators you know and love work ju
 |-----------|----------|---------|--------|
 | Operation | Operator | Example | Result |
 | Addition       | `+` | `a = 2 + 2` | `# a = 4` |
-| Subtraction    | `+` | `b = 3 - 4` | `# b = -1` |
-| Multiplication | `+` | `c = 6 * 3` | `# c = 18` |
-| Division       | `+` | `d = 8 / 2` | `# d = 4.0` |
+| Subtraction    | `-` | `b = 3 - 4` | `# b = -1` |
+| Multiplication | `*` | `c = 6 * 3` | `# c = 18` |
+| Division       | `/` | `d = 8 / 2` | `# d = 4.0` |
 | Exponentiation | `**` | `exp = 2 ** 2` | `# exp = 4` |
 
 - Notice that the division of two integers results in a float.
