@@ -43,7 +43,7 @@ You can access an item in a list using the square bracket index operator `[]`. T
 ```python
 float_list = [2.3, 5.4, 6.7, 1.3]
 second = float_list[1]
-# second = 2.4
+# second = 5.4
 ```
 
 ## Converting strings to lists
