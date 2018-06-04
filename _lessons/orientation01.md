@@ -11,5 +11,8 @@ toc: true
 
 ## Reasons to learn to code
 
+- List of reasons
+
 ## Areas of interest in computing
 
+- List of topics
