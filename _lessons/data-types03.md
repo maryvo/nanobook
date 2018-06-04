@@ -2,84 +2,92 @@
 layout: lesson
 title: Using operators
 unit: data-types
-order: 2
+order: 3
 feature-img: "assets/img/gradients/blue.png"
+toc: true
 ---
 
 # Using operators
 
-Remember that **values** are **assigned** to **variables**. Think of a variable as a named container for a value.
+**Operations** are performed on data. **Operators** are syntax indicating what operation to perform.
 
-## Storing values in variables
+## Using mathematical operators
 
-Use variables to store and refer to data in your programs.
+When programming in Python, the mathematical operators you know and love work just as you might expect.
 
-The single equal `=` syntax **assigns** a value to a variable.
+|-----------|----------|---------|--------|
+| Operation | Operator | Example | Result |
+| Addition       | `+` | `a = 2 + 2` | `# a = 4` |
+| Subtraction    | `+` | `b = 3 - 4` | `# b = -1` |
+| Multiplication | `+` | `c = 6 * 3` | `# c = 18` |
+| Division       | `+` | `d = 8 / 2` | `# d = 4.0` |
+| Exponentiation | `**` | `exp = 2 ** 2` | `# exp = 4` |
 
-```python
-planet = 'Neptune'          # string
-orbital_period_years = 165  # integer
-mass_ratio_to_earth = 17.15 # float
-is_inner_planet = False     # boolean
-```
+- Notice that the division of two integers results in a float.
+- Computing the exponent uses the `**` operator. The `^` operator you may be used to means something different in Python.
 
-A variable can hold any type of value.
-
-## Checking the type of a variable
-
-Python programmers often rely on variable names and context about the problem and solution domain to know what data type a variable's value should be.
-
-You can also use the built-in method `type()` to check the type of any value.
+You can also add strings. This is called **concatenation**.
 
 ```python
-planet = 'Neptune'
-type(planet)                 # <class 'str'>
-orbital_period_years = 165  
-type(orbital_period_years)   # <class 'int'>
-mass_ratio_to_earth = 17.15 
-type(mass_ratio_to_earth)    # <class 'float'>
-is_inner_planet = False     
-type(is_inner_planet)        # <class 'bool'>
+dollars = '$' + str(100) + ',' + str(500)
+# dollars = '$100,500'
 ```
 
-Variables do not specify a data type. Variables do not enforce a data type.
+### Using integer division
 
-A variable can be **reassigned** to another value, even of a different type.
+There is also an integer division operation using the `//` operator that truncates the result to a whole number by rounding down. Consider these examples:
 
 ```python
-planet = 'Neptune'
-type(planet) # <class 'str'>
-planet = 8
-type(planet) # <class 'int'>
-# planet = 8
-# planet was a string, then it was reassigned to an integer
+# integer division always rounds down in the negative direction, not necessarily towards zero
+7 // 3      # = 2
+-7 // 3     # = -3
+# integer division on float values does truncate, but preserves the float type
+7.0 // 3.0  # = 2.0
+-7.0 // 3.0 # = -3.0
+# if even one of the two values in the operation is a float, the result will be a truncated float
+7 // 3.0    # = 2.0
+-7.0 // 3   # = -3.0
 ```
 
-## Using the None object
+### Using modulo to find remainders
 
-If you plan to assign a value to a variable later in your program, try to choose a sensible default value.
+Another common operation is to find the remainder of a division. You can accomplish this with the modulo operator `%`.
 
 ```python
-# surely, there are downsides to defaulting someone's age to 21
-your_age = 12
-# later determine the user's actual age
+# check for remainder
+37 % 5  # = 2
+# if the remainder is 0, then the dividend is cleanly divisible by the divisor
+dividend = 50
+divisor = 10
+remainder = dividend % divisor
+# remainder = 0
 ```
 
-You can also use a special object `None` to indicate that the variable has not been assigned yet
+## Reading operators
+
+An **operator** applies an operation on the values to the left and right of the symbol. The result of the operation is a new value. Use precedence of operations and parentheses to determine the order in which operations are evaluated.
+
+For example, multiplication has precedence over addition. In this example, the operator `*` is applied to `4` on its left and `3` on its right.
 
 ```python
-# wouldn't want to assume they are 12 either
-your_age = None
-# later determine the user's actual age
-type(your_age) # <class 'NoneType'>
+val = 2 + 4 * 3
+# val1 = 14
+```
+Using parentheses, the operator `*` is applied to `(2 + 4)` on its left and `3` on its right.
+
+```python
+val2 = (2 + 4) * 3
+# val2 = 18
 ```
 
-In fact, the `None` object is its own type.
+## Other operators
 
-## Understanding types and classes
+The mathematical operators are not the only kinds of operators. In most code editors, you will see the keywords and key symbols highlighted in a special color.
 
-You may have noticed that the `type()` function shows that these values belong to their own `class`. For many programs you write in Python, it is okay to not worry about the difference between type and class. If you are curious, you can read more about it in [this StackOverflow article.](https://stackoverflow.com/questions/35958961/class-vs-type-in-python)
+Operators can be keywords too, not just key symbols. Consider the `in` operator which checks if a smaller string is contained in a bigger string and returns a boolean with the result.
 
-A class is a categorization of objects that all behave similarly. Based on their class, objects can take on certain values, have certain attributes, and work with certain methods.
-
-Programmers can even define their own custom classes. For now, you can still accomplish a great deal using built-in classes.
+```python
+message = 'I love doggos'
+search = 'dog' in message
+# search = True
+```

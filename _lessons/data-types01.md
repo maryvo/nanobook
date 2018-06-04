@@ -4,6 +4,7 @@ title: Choosing which type of data to use
 unit: data-types
 order: 1
 feature-img: "assets/img/gradients/blue.png"
+toc: true
 ---
 
 # Choosing which type of data to use
@@ -41,7 +42,7 @@ When values are written into a program literally, the syntax determines their ty
 planet = 'Neptune'
 ```
 
-Booleans must be capitalized. Otherwise you will get a `SyntaxError` like this:
+Booleans must be capitalized. Otherwise you will get a `NameError` because the computer thinks you are referencing a variable named `false`.
 
 ```python
 is_inner_planet = false
@@ -52,4 +53,6 @@ is_inner_planet = false
 NameError: name 'false' is not defined
 ```
 
-Other errors in the syntax of declaring a value can also cause `SyntaxError`s. But it is better to have a known error that you can fix than to accidentally use the wrong data type and have to figure out why a program is misbehaving.
+**Note:** Only suffering can come from actually naming a variable `false`.
+
+Other errors in the syntax of declaring a value can also cause `NameError`s and `SyntaxError`s. But, it is better to have a known error that you can fix than to accidentally use the wrong data type and have to figure out why a program is misbehaving.
