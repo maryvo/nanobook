@@ -120,7 +120,7 @@ bool(0)    # = False
 bool(0.0)  # = False
 bool(2345) # = True
 # even negatives are truthy
-bool(-500) # = False
+bool(-500) # = True
 # empty strings are the only falsy strings
 bool('')   # = False
 bool('ok') # = True
