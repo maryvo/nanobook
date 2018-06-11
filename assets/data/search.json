@@ -12,7 +12,7 @@
           "url"      : "{{ site.baseurl }}{{ page.url }}",
           "date"     : "{{ page.date | date: "%B %-d, %Y" }}",
           "excerpt"  : {{ page.content | truncate: '250' | jsonify }},
-          "content"  : {{ page.content | truncate: '250' | jsonify }}
+          "content"  : {{ page.content | jsonify }}
        {% endif %}
      } {% unless forloop.last %},{% endunless %}
    {% endfor %}{% if site.units.size > 0 %},{% endif %}
