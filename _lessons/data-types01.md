@@ -11,7 +11,7 @@ toc: true
 
 Programs represent concepts from a certain **problem domain** in their own **solution domain**. When you model elements of the problem you want to solve in your code, you choose types of data.
 
-We use **values** to represent data and variables to keep track of **values**.
+We use **values** to represent data and **variables** to keep track of values.
 
 All values in Python are **objects**. The **type** or **class** of an object determines what values it can take on, what attributes it has, and what functions it is compatible with.
 
