@@ -9,9 +9,24 @@ toc: true
 
 # How can I learn to code?
 
-## Behaviors of effective programmers
+Learning to code may feel different from other skills you have learned.
 
-- List of behaviors
+## Asking for help
+
+...
+
+## Solving programming problems
+
+One theory [1] suggests that successful programmers repeat these six steps when faced with a problem:
+
+1. Interpret the problem
+2. Think of similar problems
+3. Think of potential solutions to the problem
+4. Evaluate potential solutions
+5. Implement a solution
+6. Evaluate the implementation of the solution
+
+> 1. Loksa, Dastyni & Ko, Andrew. (2016). The Role of Self-Regulation in Programming Problem Solving Process and Success. 83-91. 10.1145/2960310.2960334.
 
 ## Reading programs
 
@@ -48,8 +63,8 @@ But sometimes, that starter code can also be confusing. Here are some tips for r
 
 Every single programmer runs into **bugs**: issues of any size that prevent programs from working correctly.
 
-- **Syntax** bugs are issues with syntax
-- **Semantic** bugs are issues with meaning
+- **Syntax** bugs come from code that is written incorrectly and cannot be understood by the computer
+- **Semantic** bugs arise when the meaning of the code does match the intentions of the programmer 
 
 Bugs can be categorized in many other ways. As you read and write more programs, you will develop the skills of identifying and fixing bugs.
 
