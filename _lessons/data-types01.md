@@ -7,7 +7,7 @@ feature-img: "assets/img/gradients/blue.png"
 toc: true
 ---
 
-# Choosing which type of data to use
+# Types of data
 
 Programs represent concepts from a certain **problem domain** in their own **solution domain**. When you model elements of the problem you want to solve in your code, you choose types of data.
 
