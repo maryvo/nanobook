@@ -9,11 +9,7 @@ toc: true
 
 # How can I learn to code?
 
-Learning to code may feel different from other skills you have learned.
-
-## Asking for help
-
-...
+Learning to code may feel different from other skills you have learned. Here is an overview of what programming includes.
 
 ## Solving programming problems
 
@@ -26,7 +22,7 @@ One theory [1] suggests that successful programmers repeat these six steps when 
 5. Implement a solution
 6. Evaluate the implementation of the solution
 
-> 1. Loksa, Dastyni & Ko, Andrew. (2016). The Role of Self-Regulation in Programming Problem Solving Process and Success. 83-91. 10.1145/2960310.2960334.
+> 1. Loksa, Dastyni & Ko, Andrew. (2016). The Role of Self-Regulation in Programming Problem Solving Process and Success. 83-91.
 
 ## Reading programs
 
