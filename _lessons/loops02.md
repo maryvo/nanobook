@@ -17,6 +17,12 @@ toc: true
 - `stop`: Number to end range before (exclusive)
 - `step`: The gap between each number in the range, default: `1`
 
+The `range()` function only accepts integers, or whole numbers, so floating numbers, or numbers with decimals will cause this error message:
+
+```
+TypeError: 'float' object cannot be interpreted as an integer
+```
+
 ## Step Size
 
 The term **increment** means to add. You can change the incrementation of a loop with the `step` parameter.
