@@ -1,6 +1,6 @@
 ---
 layout: lesson
-title: Choosing which type of data to use
+title: Types of data
 unit: data-types
 order: 1
 feature-img: "assets/img/gradients/blue.png"
