@@ -20,7 +20,7 @@ All values in Python are **objects**. The **type** or **class** of an object det
 In Python, you can work with four **primitive** data types:
 
 - Integers for whole numbers such as `1`, `-20`, and `0`
-- Floats for fractional values such as `0.25` and `-0.333`
+- Floats for fractional values such as `0.25` and `-1.333`
 - Strings for text such as `'I enjoy coding'` and `'A'`
 - Booleans for values that are either `True` or `False`
 
