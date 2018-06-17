@@ -63,6 +63,17 @@ remainder = dividend % divisor
 # remainder = 0
 ```
 
+### Operators on other types
+
+Mathematical operators are commonly used on integers and floats, but they can also be used on other types. For example, strings can be added (**concatenated**) together with an addition operator:
+
+```python
+full_name = 'First' + 'Last'
+# full_name = 'First Last'
+```
+
+Make sure you know what type of data you are working with so that you don't get unexpected results!
+
 ## Reading operators
 
 An **operator** applies an operation on the values to the left and right of the symbol. The result of the operation is a new value. Use precedence of operations and parentheses to determine the order in which operations are evaluated.
@@ -79,6 +90,17 @@ Using parentheses, the operator `*` is applied to `(2 + 4)` on its left and `3` 
 val2 = (2 + 4) * 3
 # val2 = 18
 ```
+
+Here is the order of common operators in Python. The higher up on the list, the greater precedence an operator has.
+
+1. Parentheses `()`
+2. Exponentiation `**`
+3. Multiplication `*`
+4. Division `/`
+5. Integer Division `//`
+6. Modulo `%`
+7. Addition `+`
+8. Subtraction `-`
 
 ## Other operators
 
