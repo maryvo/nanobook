@@ -31,8 +31,8 @@ Each section in this guide covers a syntactical construct. Sections may include:
 | [3. Conditional Statements](#conditional-statements)     | Select what part of a program should be run.       |
 | [4. For Loops](#for-loops)                               | Repeat actions a set number of times.              |
 | [5. While Loops](#while-loops)                           | Repeat actions as long as condition is true.       |
-| [6. String Manipulation](#string-manipulation)           | Store and retrieve information using text.         |
-| [7. Functions](#function)                                | Group parts of a program related to a common task. |
+| [6. Functions](#function)                                | Group parts of a program related to a common task. |
+| [7. String Manipulation](#string-manipulation)           | Store and retrieve information using text.         |
 
 ## Variables and Data Types
 
@@ -71,11 +71,39 @@ sample_boolean = True
 
 **Goal:** Bring data in and out of a program.
 
-```python
-name = input('What is your name? ')
-print('Hello')
+Here is the syntax for taking user input:
 
+```python
+VARIABLE = input(PROMPT)
 ```
+
+- Calling the `input()` function causes the program to display the (optional) `PROMPT` text (which must be a string) to the user and wait until they have entered some text.
+- When the user writes text and hits enter, the program will store the text as a string in the `VARIABLE` and continue by executing the next line.
+- Since the value from input will be a string, the programmer may have to convert it to another type.
+
+Converting strings to numbers is the most common situation. Here are some examples:
+
+```python
+number_text = input('Enter a number: ')
+# number_text = '24'
+number = int(number_text)
+# number = 24
+```
+
+```python
+decimal_text = input('Enter a decimal: ')
+# decimal_text = '1.76'
+decimal = float(decimal_text)
+# decimal = 1.76
+```
+
+Here is the syntax for output:
+
+```python
+print(MESSAGE)
+```
+
+- The `print()` function will display the `MESSAGE` text (which must be a string).
 
 ## Conditional Statements
 
@@ -92,7 +120,9 @@ else:
     BRANCH_WITH_DIFFERENT_LINES_OF_CODE
 ```
 
-A **branch** of a conditional statement is run if and only if the condition above it is `True`. If no conditions are `True`, the else branch will run. Not all branches are required.
+- A **branch** of a conditional statement is run if and only if the condition above it is `True`.
+- If no conditions are `True`, the else branch will run.
+- Not all branches are required. It is possible to have a statement using just `if` or `if` and some number of `elif` without any `else` branch.
 
 A **condition** is any operation or value that evaluates to `True` or `False`. Here are some example conditons:
 
@@ -116,8 +146,11 @@ Here is the syntax for writing a for loop:
 
 ```python
 for VARIABLE_NAME in range(NUMBER):
-    do_something()
+    BODY_WITH_LINES_OF_CODE
 ```
+
+- The **body** of the loop will be repeated `NUMBER` times.
+- After that many runs, the program will continue by executing the next of code after the loop.
 
 ## While Loops
 
@@ -127,14 +160,12 @@ Here is the syntax for writing a while loop:
 
 ```python
 while CONDITION:
-    do_something()
+    BODY_WITH_LINES_OF_CODE
 ```
 
-## String Manipulation
-
-**Goal:** Store and retrieve information using text.
-
-Coming soon...
+- The **body** of the loop will run as long as `CONDITION` is `True`.
+- The condition will be evaluated each time, before the body is run.
+- When the loop terminates, the program will continue by executing the next of code after the loop.
 
 ## Functions
 
@@ -143,7 +174,19 @@ Coming soon...
 Here is the syntax for defining a function:
 
 ```python
-def FUNCTION_NAME():
-    do_something()
+def FUNCTION_NAME(PARAMETERS):
+    BODY_WITH_LINES_OF_CODE
     return RETURN_VALUE
 ```
+
+- The function **body** contains all of the code to be run when the function is **called**.
+- The function **parameters** are additional data for the function.
+- Not all functions return a value. When the `return` statement is run, the function ends, and the program picks up execution at the next line after the function is called.
+- A function may have one return statements, several return statements, or no return statements.
+- If there are multiple return statements, only the first one to be run will take effect.
+
+## String Manipulation
+
+**Goal:** Store and retrieve information using text.
+
+Coming soon...
