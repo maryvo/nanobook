@@ -1,6 +1,12 @@
-# Building Blocks of Programs
+---
+layout: page
+title: Building Blocks of Programs
+subtitle: Learn Python through bite-sized modules.
+feature-img: "assets/img/gradients/orange.png"
+hide: true
+---
 
-## Guide Overview
+# Guide Overview
 
 In programming, **syntax** is the text that we write to create a program and **semantics** is the meaning or goal of that code. This guide is a starting place to help you write the syntax you need.
 
@@ -11,22 +17,22 @@ Each section in this guide covers a syntactical construct. Sections may include:
 - Examples that you can run through step by step
 - Links for further reading
 
-### How to Read Code in this Guide
+## How to Read Code in this Guide
 
 - When reading example syntax, words in `ALL_CAPS` represent places in the code that you fill in with custom text.
 - Lines that start with a hashtag are comments. They do not get evaluated. Comments are used to explain code.
 
-## Table of Contents
+# Table of Contents
 
-| Syntax (Construct)            | Semantics (Goal)                                   |
-|-------------------------------|----------------------------------------------------|
-| 1. Variables and Data Types   | Store data in a program.                           |
-| 2. Input and Output           | Bring data in and out of a program.                |
-| 3. Conditional Statements     | Select what part of a program should be run.       |
-| 4. For Loops                  | Repeat actions a set number of times.              |
-| 5. While Loops                | Repeat actions as long as condition is true.       |
-| 6. String Manipulation        | Store and retrieve information using text.         |
-| 7. Functions                  | Group parts of a program related to a common task. |
+| Syntax (Construct)                                       | Semantics (Goal)                                   |
+|----------------------------------------------------------|----------------------------------------------------|
+| [1. Variables and Data Types](#variables-and-data-types) | Store data in a program.                           |
+| [2. Input and Output](#input-and-output)                 | Bring data in and out of a program.                |
+| [3. Conditional Statements](#conditional-statements)     | Select what part of a program should be run.       |
+| [4. For Loops](#for-loops)                               | Repeat actions a set number of times.              |
+| [5. While Loops](#while-loops)                           | Repeat actions as long as condition is true.       |
+| [6. String Manipulation](#string-manipulation)           | Store and retrieve information using text.         |
+| [7. Functions](#function)                                | Group parts of a program related to a common task. |
 
 ## Variables and Data Types
 
@@ -79,12 +85,14 @@ Here is the syntax for writing a conditional statement:
 
 ```python
 if CONDITION1:
-    LINES_OF_CODE
+    BRANCH_WITH_LINES_OF_CODE
 elif CONDITION2:
-    OTHER_LINES_OF_CODE
+    BRANCH_WITH_OTHER_LINES_OF_CODE
 else:
-    DIFFERENT_LINES_OF_CODE
+    BRANCH_WITH_DIFFERENT_LINES_OF_CODE
 ```
+
+A **branch** of a conditional statement is run if and only if the condition above it is `True`. If no conditions are `True`, the else branch will run. Not all branches are required.
 
 A **condition** is any operation or value that evaluates to `True` or `False`. Here are some example conditons:
 

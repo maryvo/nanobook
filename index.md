@@ -7,3 +7,4 @@ hide: true
 ---
 
 <a class="button" href="{{ site.baseurl }}/units">View All Units</a>
+<a class="button" href="{{ site.baseurl }}/guide">View Guide</a>
