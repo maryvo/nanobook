@@ -79,6 +79,7 @@ for state in states:
             print('- Yes, it has consecutive vowels!')
             break
         previous_was_vowel = is_vowel
+    print('- Moving on to the next state...')
 print('All done!')
 ```
 
