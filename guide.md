@@ -31,7 +31,7 @@ Each section in this guide covers a syntactical construct. Sections may include:
 | [3. Conditional Statements](#conditional-statements)     | Select what part of a program should be run.       |
 | [4. For Loops](#for-loops)                               | Repeat actions a set number of times.              |
 | [5. While Loops](#while-loops)                           | Repeat actions as long as condition is true.       |
-| [6. Functions](#function)                                | Group parts of a program related to a common task. |
+| [6. Functions](#functions)                               | Group parts of a program related to a common task. |
 | [7. String Manipulation](#string-manipulation)           | Store and retrieve information using text.         |
 
 ## Variables and Data Types
