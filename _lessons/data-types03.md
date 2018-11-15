@@ -68,7 +68,7 @@ remainder = dividend % divisor
 Mathematical operators are commonly used on integers and floats, but they can also be used on other types. For example, strings can be added (**concatenated**) together with an addition operator:
 
 ```python
-full_name = 'First' + 'Last'
+full_name = 'First ' + 'Last'
 # full_name = 'First Last'
 ```
 
